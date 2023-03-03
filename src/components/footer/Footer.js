@@ -14,14 +14,16 @@ const Footer = () => {
           <div className="">
             <span className="text-4xl text-iconColor">
               <Link to="/">
-                <img src={logo} alt="" className="w-28 rounded-full" />
+                <img
+                  src={logo}
+                  alt=""
+                  className="w-32 rounded-full px-2 border-8 border-black"
+                />
               </Link>
             </span>
 
             <p>
-              <span className="font-bold ">
-                Ay Print & Sign Pty Ltd Civic, ACT
-              </span>
+              <span className="font-bold ">Ay Print & Sign, ACT</span>
               <p>0401122107</p>
               <span> sales@ayprintandsign.com.au</span>
             </p>
@@ -128,6 +130,12 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <div className="bg-navBackground text-headerText text-center p-4">
+        <hr className="mx-auto w-4/5 color-headerText mb-2" />
+        <div className="font-bold p-4 w-full bg-navBackground">
+          Copyright © 2023 All rights reserved | Ay print & sign
+        </div>
+      </div>
     </>
   );
 };

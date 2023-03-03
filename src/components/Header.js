@@ -21,13 +21,18 @@ const Header = () => {
             className="inline-block md:hidden text-headerText py-6 text-3xl sm:text-4xl "
             onClick={toggleMenu}
           >
+            {/* Setting menu icon on basis of useState  */}
             {open ? <GiHamburgerMenu /> : <AiOutlineClose />}
           </button>
 
           <div className="flex flex-col md:flex-row ml-8 md:ml-auto">
             <div className="-mt-20 md:mt-auto mb-6 md:mb-auto">
               <Link to="/">
-                <img src={logo} alt="" className="w-32 rounded-full" />
+                <img
+                  src={logo}
+                  alt=""
+                  className="w-40 rounded-full px-2 border-8 border-black"
+                />
               </Link>
             </div>
             <div>
@@ -46,7 +51,7 @@ const Header = () => {
                   <div key={index} className={`px-2 lg:px-12 text-headerText`}>
                     <Link
                       to={list.path}
-                      className={` text-bannerText hover:text-subText md:block ${
+                      className={` text-bannerText hover:text-subText md:block xl:text-lg ${
                         list?.blocks
                       } ${open ? "hidden" : "block"}`}
                     >

@@ -17,16 +17,16 @@ const Products = () => {
                     <img
                       src={list?.img}
                       alt=""
-                      className="h-60 ml-8  w-4/5  rounded-sm box-content  border-4"
+                      className="h-60 ml-8  w-4/5  shadow-2xl shadow-black"
                     />
                   </Link>
                   <div className={`px-12`}>
                     <Link to={`/product/${list.id}`}>
-                      <h2 className="font-extrabold text-xl md:text-2xl  text-bannerText m-2">
+                      <h2 className="font-extrabold text-2xl md:text-2xl xl:text-3xl pt-4 m-2">
                         {list.title}
                       </h2>
                     </Link>
-                    <p className=" text-xs md:text-md px-4">{list.text}</p>
+                    <p className="text-sm md:text-md px-4">{list.text}</p>
                   </div>
                 </div>
               );

@@ -20,12 +20,12 @@ const ProductRoute = () => {
               <img
                 src={list.img}
                 alt=""
-                className="h-fit sm:h-111 w-fit space-x-12 rounded-3xl"
+                className="h-fit sm:h-111 w-fit space-x-12 rounded-3xl shadow-2xl shadow-black"
               />
             </span>
 
             <div className={`px-3 md:px-12`}>
-              <h2 className="font-extrabold text-2xl md:text-3xl xl:text-5xl text-bannerText m-6">
+              <h2 className="font-extrabold text-2xl md:text-3xl xl:text-5xl  m-6">
                 {list.title}
               </h2>
 
