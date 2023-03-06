@@ -1,12 +1,16 @@
 import { products } from "../../data/Data";
 import { Navigate, Link } from "react-router-dom";
+import Search from "../search/Search";
 const Allproducts = () => {
   return (
     <>
       {/* In all products page, we are rendering all our products */}
-      <h1 className=" text-4xl text-subText mb-12 p-8 underline underline-offset-8 decoration-bannerText ">
+      <h1 className=" text-4xl text-subText mb-6 p-8 underline underline-offset-8 decoration-bannerText ">
         Our Products
       </h1>
+      <div className="mb-12">
+        <Search />
+      </div>
       <section className=" mb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-32 md:mx-12  ">
           {products.map((list, index) => (

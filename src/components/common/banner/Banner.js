@@ -14,7 +14,7 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="flex flex-row  pt-24 ">
+          {/* <div className="flex flex-row  pt-24 ">
             <Link
               to="/contact"
               className="absolute sm:ml-2 md:ml-0 -left-6 sm:-left-16 xl:-left-24 px-2 py-1 md:px-4  bg-buttonBg hover:bg-navBackground text-navBackground hover:text-headerText text-sm md:text-lg"
@@ -27,7 +27,7 @@ const Banner = () => {
             >
               VIEW OUR PRODUCT
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

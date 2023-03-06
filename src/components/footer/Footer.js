@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { RiFacebookLine } from "react-icons/ri";
 import { CgInstagram } from "react-icons/cg";
@@ -24,8 +24,22 @@ const Footer = () => {
 
             <p>
               <span className="font-bold ">Ay Print & Sign, ACT</span>
-              <p>0401122107</p>
-              <span> sales@ayprintandsign.com.au</span>
+              <div className="flex flex-row w-2/4">
+                <span>
+                  <BsFillTelephoneFill />
+                </span>
+                <span>
+                  <a href="tel:+61401122107" className="text-headerText">
+                    0401122107
+                  </a>
+                </span>
+              </div>
+              <div className="flex flex-row w-2/4">
+                <span>
+                  <MdEmail className="mr-6" />
+                </span>
+                <span> sales@ayprintandsign.com.au</span>
+              </div>
             </p>
           </div>
 
@@ -131,7 +145,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="bg-navBackground text-headerText text-center p-4">
-        <hr className="mx-auto w-4/5 color-headerText mb-2" />
+        <hr className="mx-auto  color-headerText mb-2" />
         <div className="font-bold p-4 w-full bg-navBackground">
           Copyright © 2023 All rights reserved | Ay print & sign
         </div>

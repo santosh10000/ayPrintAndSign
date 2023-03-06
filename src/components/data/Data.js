@@ -14,6 +14,8 @@ import asign from "../../assets/product/asign.jpg";
 import uuid from "react-uuid";
 //Quote images
 
+// We have static dta for all the navlink, products and it's images.
+
 export const nav = [
   {
     text: "HOME",
@@ -27,6 +29,10 @@ export const nav = [
     text: "PRODUCT",
     path: "/product",
   },
+  {
+    text: "QUOTE",
+    path: "/contact",
+  },
 
   {
     text: "CONTACT",
@@ -39,13 +45,13 @@ export const products = [
     id: "business",
     img: business,
     title: "Business Cards",
-    text: "Looking to make a lasting impression with your business cards? Look no further than ay Print & Sign! Our high-quality business card printing services are designed to help you stand out from the crowd and make a lasting impression on potential customers and clients",
+    text: "Looking to make a lasting impression with your business cards? Look no further than Ay print & Sign! Our high-quality business card printing services are designed to help you stand out from the crowd and make a lasting impression on potential customers and clients",
   },
   {
     id: uuid(),
     img: vinyl,
     title: "Vinyl Banners",
-    text: "Looking for an effective way to promote your business, event, or special offer? Look no further than ay Print & Sign's high-quality flyers and brochures! Our printing services allow you to create custom-designed flyers and brochures that truly reflect your brand and message",
+    text: "Looking for an effective way to promote your business, event, or special offer? Look no further than Ay print & Sign's high-quality flyers and brochures! Our printing services allow you to create custom-designed flyers and brochures that truly reflect your brand and message",
   },
   {
     id: uuid(),
@@ -57,7 +63,7 @@ export const products = [
     id: uuid(),
     img: mesh,
     title: "Mesh Banners",
-    text: "Are you looking for an effective way to advertise your business or event outdoors, without sacrificing visibility? Consider a high-quality mesh banner from ay Print & Sign! Our mesh banners are made with a specialized material that allows for maximum air flow, making them perfect for outdoor use in windy conditions.",
+    text: "Are you looking for an effective way to advertise your business or event outdoors, without sacrificing visibility? Consider a high-quality mesh banner from Ay print & Sign! Our mesh banners are made with a specialized material that allows for maximum air flow, making them perfect for outdoor use in windy conditions.",
   },
   {
     img: rollup,
@@ -74,7 +80,7 @@ export const products = [
     id: uuid(),
     img: window,
     title: "Window Stickers",
-    text: "Looking for an effective way to promote your business or add a unique touch to your storefront windows? Look no further than ay Print & Sign's high-quality window stickers! At ay Print & Sign, we offer a range of custom design options for your window stickers, including different sizes, shapes, and finishes.",
+    text: "Looking for an effective way to promote your business or add a unique touch to your storefront windows? Look no further than Ay print & Sign's high-quality window stickers! At Ay print & Sign, we offer a range of custom design options for your window stickers, including different sizes, shapes, and finishes.",
   },
   {
     id: uuid(),
@@ -86,13 +92,13 @@ export const products = [
     id: uuid(),
     img: custom,
     title: "Custom Stickers",
-    text: "Looking for a fun and creative way to promote your business, show off your brand, or add a personal touch to your products or packaging? Look no further than ay Print & Sign's high-quality custom stickers! Our stickers are easy to apply and remove, making them a flexible and cost-effective advertising option.",
+    text: "Looking for a fun and creative way to promote your business, show off your brand, or add a personal touch to your products or packaging? Look no further than Ay print & Sign's high-quality custom stickers! Our stickers are easy to apply and remove, making them a flexible and cost-effective advertising option.",
   },
   {
     id: uuid(),
     img: corflute,
     title: "Corflute Sign Boards",
-    text: "At ay Print & Sign, we offer a range of custom design options for your corflute signs, including different sizes, shapes, and finishes. Whether you're promoting a sale, a new product, or simply directing traffic to your event, we have the expertise and experience to help you create a sign that stands out and grabs attention.",
+    text: "At Ay print & Sign, we offer a range of custom design options for your corflute signs, including different sizes, shapes, and finishes. Whether you're promoting a sale, a new product, or simply directing traffic to your event, we have the expertise and experience to help you create a sign that stands out and grabs attention.",
   },
   {
     id: uuid(),

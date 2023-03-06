@@ -1,45 +1,23 @@
-import Footer from "../components/footer/Footer";
-import Header from "../components/Header";
 import { Link, useParams } from "react-router-dom";
 import { products } from "../components/data/Data";
+import Footer from "../components/footer/Footer";
+import Header from "../components/Header";
 import oops from "../assets/oops.jpg";
 
-const ProductRoute = () => {
+const SearchProducts = () => {
   let params = useParams();
-  if (!params) {
-    params = "business";
-  }
-  const product = products.filter((data) => data.id === params.id);
+  console.log(params.query.toLocaleUpperCase());
+  const capitalize = () =>
+    params.query && params.query[0].toUpperCase() + params.query.slice(1);
+  console.log(capitalize());
+  const query = capitalize();
+  const product = products.filter((product) => product.title.includes(query));
+
+  console.log(product);
 
   return (
     <>
       <Header />
-      {/* <div className="py-6">
-        {product.map((list, index) => (
-          <div key={index} className="flex flex-col px-4 ">
-            <span className="">
-              <img
-                src={list.img}
-                alt=""
-                className="h-fit sm:h-111 w-fit space-x-12 rounded-3xl shadow-2xl shadow-black"
-              />
-            </span>
-
-            <div className={`px-3 md:px-12`}>
-              <h2 className="font-extrabold text-2xl md:text-3xl xl:text-5xl  m-6">
-                {list.title}
-              </h2>
-
-              <p className="text-center text-lg md:text-2xl">{list.text}</p>
-            </div>
-          </div>
-        ))}
-        <Link to="/contact">
-          <button className="block mx-auto mt-8 px-4 py-2 mb-12 bg-subText  hover:bg-bannerText text-headerText md:text-xl">
-            Get a Quote
-          </button>
-        </Link>
-      </div> */}
       <div className="py-6">
         {!product.length > 0 && (
           <div>
@@ -56,7 +34,7 @@ const ProductRoute = () => {
         {product.map((list, index) => (
           <div
             key={index}
-            className="flex  md:flex-row flex-col-reverse md:space-x-24 px-12 py-6"
+            className="flex  md:flex-row flex-col-reverse md:space-x-24 md:px-12 py-6"
           >
             <div className={`px-3 md:px-12 md:-mt-24`}>
               <h2 className="font-extrabold text-2xl md:text-3xl xl:text-5xl  m-6">
@@ -113,9 +91,8 @@ const ProductRoute = () => {
           </Link>
         )} */}
       </div>
-
       <Footer />
     </>
   );
 };
-export default ProductRoute;
+export default SearchProducts;
